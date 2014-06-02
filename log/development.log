@@ -1,0 +1,744 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-30 18:14:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (6.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LanguagesController#index as HTML
+  [1m[35mLanguage Load (0.3ms)[0m  SELECT "languages".* FROM "languages"
+  Rendered languages/index.html.erb within layouts/application (8.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 156ms (Views: 150.7ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/answer_show.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/language.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/category.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/login_signup.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/questions_show.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/recorder.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/jquery.caret.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/utils.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/editor.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/player.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/recorder.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/recorder_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/layout/layout_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/questions/index_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/questions/show_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/languages/index_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/answers/new_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/answers/show_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/sessions/login_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/users/new_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/sublime_blur2.png" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/hazy.png" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/dark_geometric.png" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/assets/squared_metal_light_blue_hover.png" for 127.0.0.1 at 2014-05-30 18:14:33 -0400
+
+
+Started GET "/categories?end_language=JavaScript&start_language=Ruby" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+Processing by CategoriesController#index as HTML
+  Parameters: {"end_language"=>"JavaScript", "start_language"=>"Ruby"}
+  [1m[35mCategory Load (7.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (20.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 38ms (Views: 25.6ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/recorder.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/language.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/questions_show.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/category.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/login_signup.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/jquery.caret.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/utils.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/editor.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/player.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/recorder.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/recorder_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/layout/layout_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/questions/index_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/questions/show_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/languages/index_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/answers/new_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/answers/show_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/sessions/login_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/users/new_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/dark_geometric.png" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/assets/hazy.png" for 127.0.0.1 at 2014-05-30 18:14:48 -0400
+
+
+Started GET "/questions?category=1&end_language=JavaScript&start_language=Ruby" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+Processing by QuestionsController#index as HTML
+  Parameters: {"category"=>"1", "end_language"=>"JavaScript", "start_language"=>"Ruby"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mQuestion Load (0.6ms)[0m  [1mSELECT "questions".* FROM "questions"  WHERE "questions"."category_id" = 1 AND "questions"."start_language" = 'Ruby' AND "questions"."end_language" = 'JavaScript'[0m
+  [1m[35mAnswer Exists (0.3ms)[0m  SELECT  1 AS one FROM "answers"  WHERE "answers"."question_id" = $1 LIMIT 1  [["question_id", 1]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value > 0)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value > 0)[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value > 0)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value > 0)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value > 0)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value > 0)[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mAnswer Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "answers"  WHERE "answers"."question_id" = $1 LIMIT 1[0m  [["question_id", 2]]
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = $1  [["question_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 2 AND (vote_value > 0)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 2 AND (vote_value > 0)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered shared/_question.html.erb (52.2ms)
+  Rendered questions/index.html.erb within layouts/application (59.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+Completed 200 OK in 83ms (Views: 63.3ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/assets/category.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/language.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/questions_show.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/recorder.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/login_signup.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/jquery.caret.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/utils.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/editor.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/player.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/recorder.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/recorder_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/layout/layout_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/questions/index_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/questions/show_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/languages/index_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/answers/new_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/answers/show_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/sessions/login_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/users/new_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/dark_geometric.png" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/squared_metal_light_blue.png" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/hazy.png" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/squared_metal_blue_hover.png" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/assets/squared_metal_red.png" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+
+
+Started GET "/get_answer/?question_id=2" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+Processing by QuestionsController#get_answer as */*
+  Parameters: {"question_id"=>"2"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mAnswer Load (0.5ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = $1  [["question_id", 2]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 2 AND (vote_value > 0)[0m
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/get_answer/?question_id=1" for 127.0.0.1 at 2014-05-30 18:14:50 -0400
+Processing by QuestionsController#get_answer as */*
+  Parameters: {"question_id"=>"1"}
+  [1m[35mQuestion Load (1.0ms)[0m  SELECT  "questions".* FROM "questions"  WHERE "questions"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mAnswer Load (1.2ms)[0m  [1mSELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value > 0)
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value > 0)[0m
+  [1m[35m (1.1ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value > 0)
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/squared_metal_light_blue_hover.png" for 127.0.0.1 at 2014-05-30 18:14:51 -0400
+
+
+Started GET "/assets/squared_metal_blue.png" for 127.0.0.1 at 2014-05-30 18:14:52 -0400
+
+
+Started GET "/assets/squared_metal_red_hover.png" for 127.0.0.1 at 2014-05-30 18:15:01 -0400
+
+
+Started GET "/answers/new?question=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+Processing by AnswersController#new as HTML
+  Parameters: {"question"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions"  WHERE "questions"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered answers/new.html.erb within layouts/application (12.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 43ms (Views: 28.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/category.css?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/language.css?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/login_signup.css?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/questions_show.css?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/recorder.css?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/jquery.caret.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/utils.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/editor.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/player.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/recorder.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/recorder_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/layout/layout_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/questions/index_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/questions/show_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/languages/index_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/answers/new_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/answers/show_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/sessions/login_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/users/new_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/dark_geometric.png" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/hazy.png" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/squared_metal_blue_hover.png" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/squared_metal_light_blue.png" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/squared_metal_orange.png" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/squared_metal_red.png" for 127.0.0.1 at 2014-05-30 18:15:06 -0400
+
+
+Started GET "/assets/squared_metal_red_hover.png" for 127.0.0.1 at 2014-05-30 18:15:39 -0400
+
+
+Started GET "/assets/squared_metal_blue.png" for 127.0.0.1 at 2014-05-30 18:16:24 -0400
+
+
+Started GET "/assets/squared_metal_light_blue_hover.png" for 127.0.0.1 at 2014-05-30 18:16:29 -0400
+
+
+Started POST "/answers/create.json" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+Processing by AnswersController#create as JSON
+  Parameters: {"token"=>"xPErWE9xjV1rwFoOmN0W4stWYKZpDIAGZhpfifZeiN0=", "delta"=>{"0"=>["[1,2,3].each do |numbers|\n\tputs numbers\nend", "0"], "1"=>["[1,2,3].feach do |numbers|\n\tputs numbers\nend", "3424"], "2"=>["[1,2,3].foeach do |numbers|\n\tputs numbers\nend", "3599"], "3"=>["[1,2,3].foreach do |numbers|\n\tputs numbers\nend", "3688"], "4"=>["[1,2,3].forach do |numbers|\n\tputs numbers\nend", "4896"], "5"=>["[1,2,3].forEach do |numbers|\n\tputs numbers\nend", "5376"], "6"=>["[1,2,3].forEach d |numbers|\n\tputs numbers\nend", "7239"], "7"=>["[1,2,3].forEach  |numbers|\n\tputs numbers\nend", "7391"], "8"=>["[1,2,3].forEach |numbers|\n\tputs numbers\nend", "7671"], "9"=>["[1,2,3].forEach{ |numbers|\n\tputs numbers\nend", "9698"], "10"=>["[1,2,3].forEach{ numbers|\n\tputs numbers\nend", "11217"], "11"=>["[1,2,3].forEach{ fnumbers|\n\tputs numbers\nend", "11969"], "12"=>["[1,2,3].forEach{ funumbers|\n\tputs numbers\nend", "12176"], "13"=>["[1,2,3].forEach{ funnumbers|\n\tputs numbers\nend", "12369"], "14"=>["[1,2,3].forEach{ funcnumbers|\n\tputs numbers\nend", "12489"], "15"=>["[1,2,3].forEach{ functnumbers|\n\tputs numbers\nend", "12657"], "16"=>["[1,2,3].forEach{ functinumbers|\n\tputs numbers\nend", "12889"], "17"=>["[1,2,3].forEach{ functionumbers|\n\tputs numbers\nend", "12960"], "18"=>["[1,2,3].forEach{ functionnumbers|\n\tputs numbers\nend", "13089"], "19"=>["[1,2,3].forEach{ function(numbers|\n\tputs numbers\nend", "13784"], "20"=>["[1,2,3].forEach{ function(numbers\n\tputs numbers\nend", "16369"], "21"=>["[1,2,3].forEach{ function(numbers)\n\tputs numbers\nend", "16865"], "22"=>["[1,2,3].forEach{ function(numbers){\n\tputs numbers\nend", "17898"], "23"=>["[1,2,3].forEach{ function(numbers){\n\tputsnumbers\nend", "20613"], "24"=>["[1,2,3].forEach{ function(numbers){\n\tputnumbers\nend", "20776"], "25"=>["[1,2,3].forEach{ function(numbers){\n\tpunumbers\nend", "20928"], "26"=>["[1,2,3].forEach{ function(numbers){\n\tpnumbers\nend", "21104"], "27"=>["[1,2,3].forEach{ function(numbers){\n\tnumbers\nend", "21312"], "28"=>["[1,2,3].forEach{ function(numbers){\n\tcnumbers\nend", "21617"], "29"=>["[1,2,3].forEach{ function(numbers){\n\tconumbers\nend", "22009"], "30"=>["[1,2,3].forEach{ function(numbers){\n\tconnumbers\nend", "22217"], "31"=>["[1,2,3].forEach{ function(numbers){\n\tconsnumbers\nend", "22545"], "32"=>["[1,2,3].forEach{ function(numbers){\n\tconsonumbers\nend", "22825"], "33"=>["[1,2,3].forEach{ function(numbers){\n\tconsolnumbers\nend", "23121"], "34"=>["[1,2,3].forEach{ function(numbers){\n\tconsolenumbers\nend", "23489"], "35"=>["[1,2,3].forEach{ function(numbers){\n\tconsole.numbers\nend", "24144"], "36"=>["[1,2,3].forEach{ function(numbers){\n\tconsole.lnumbers\nend", "24416"], "37"=>["[1,2,3].forEach{ function(numbers){\n\tconsole.lonumbers\nend", "24592"], "38"=>["[1,2,3].forEach{ function(numbers){\n\tconsole.lognumbers\nend", "24840"], "39"=>["[1,2,3].forEach{ function(numbers){\n\tconsole.log(numbers\nend", "25616"], "40"=>["[1,2,3].forEach{ function(numbers){\n\tconsole.log(numbers)\nend", "27441"], "41"=>["[1,2,3].forEach{ function(numbers){\n\tconsole.log(numbers);\nend", "28080"], "42"=>["[1,2,3].forEach{ function(numbers){\n\tconsole.log(numbers);\nen", "29113"], "43"=>["[1,2,3].forEach{ function(numbers){\n\tconsole.log(numbers);\ne", "29281"], "44"=>["[1,2,3].forEach{ function(numbers){\n\tconsole.log(numbers);\n", "29442"], "45"=>["[1,2,3].forEach{ function(numbers){\n\tconsole.log(numbers);\n}", "30504"], "46"=>["[1,2,3].forEach function(numbers){\n\tconsole.log(numbers);\n}", "37755"], "47"=>["[1,2,3].forEach( function(numbers){\n\tconsole.log(numbers);\n}", "38307"], "48"=>["[1,2,3].forEach( function(numbers){\n\tconsole.log(numbers);\n})", "39964"], "49"=>["[1,2,3].forEach( function(numbers){\n\tconsole.log(numbers);\n});", "40268"]}, "question_id"=>"1"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (6.5ms)[0m  BEGIN
+  [1m[36mSQL (4.3ms)[0m  [1mINSERT INTO "answers" ("created_at", "delta", "question_id", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-05-30 22:16:31.678019"], ["delta", "{\"0\":[\"[1,2,3].each do |numbers|\\n\\tputs numbers\\nend\",\"0\"],\"1\":[\"[1,2,3].feach do |numbers|\\n\\tputs numbers\\nend\",\"3424\"],\"2\":[\"[1,2,3].foeach do |numbers|\\n\\tputs numbers\\nend\",\"3599\"],\"3\":[\"[1,2,3].foreach do |numbers|\\n\\tputs numbers\\nend\",\"3688\"],\"4\":[\"[1,2,3].forach do |numbers|\\n\\tputs numbers\\nend\",\"4896\"],\"5\":[\"[1,2,3].forEach do |numbers|\\n\\tputs numbers\\nend\",\"5376\"],\"6\":[\"[1,2,3].forEach d |numbers|\\n\\tputs numbers\\nend\",\"7239\"],\"7\":[\"[1,2,3].forEach  |numbers|\\n\\tputs numbers\\nend\",\"7391\"],\"8\":[\"[1,2,3].forEach |numbers|\\n\\tputs numbers\\nend\",\"7671\"],\"9\":[\"[1,2,3].forEach{ |numbers|\\n\\tputs numbers\\nend\",\"9698\"],\"10\":[\"[1,2,3].forEach{ numbers|\\n\\tputs numbers\\nend\",\"11217\"],\"11\":[\"[1,2,3].forEach{ fnumbers|\\n\\tputs numbers\\nend\",\"11969\"],\"12\":[\"[1,2,3].forEach{ funumbers|\\n\\tputs numbers\\nend\",\"12176\"],\"13\":[\"[1,2,3].forEach{ funnumbers|\\n\\tputs numbers\\nend\",\"12369\"],\"14\":[\"[1,2,3].forEach{ funcnumbers|\\n\\tputs numbers\\nend\",\"12489\"],\"15\":[\"[1,2,3].forEach{ functnumbers|\\n\\tputs numbers\\nend\",\"12657\"],\"16\":[\"[1,2,3].forEach{ functinumbers|\\n\\tputs numbers\\nend\",\"12889\"],\"17\":[\"[1,2,3].forEach{ functionumbers|\\n\\tputs numbers\\nend\",\"12960\"],\"18\":[\"[1,2,3].forEach{ functionnumbers|\\n\\tputs numbers\\nend\",\"13089\"],\"19\":[\"[1,2,3].forEach{ function(numbers|\\n\\tputs numbers\\nend\",\"13784\"],\"20\":[\"[1,2,3].forEach{ function(numbers\\n\\tputs numbers\\nend\",\"16369\"],\"21\":[\"[1,2,3].forEach{ function(numbers)\\n\\tputs numbers\\nend\",\"16865\"],\"22\":[\"[1,2,3].forEach{ function(numbers){\\n\\tputs numbers\\nend\",\"17898\"],\"23\":[\"[1,2,3].forEach{ function(numbers){\\n\\tputsnumbers\\nend\",\"20613\"],\"24\":[\"[1,2,3].forEach{ function(numbers){\\n\\tputnumbers\\nend\",\"20776\"],\"25\":[\"[1,2,3].forEach{ function(numbers){\\n\\tpunumbers\\nend\",\"20928\"],\"26\":[\"[1,2,3].forEach{ function(numbers){\\n\\tpnumbers\\nend\",\"21104\"],\"27\":[\"[1,2,3].forEach{ function(numbers){\\n\\tnumbers\\nend\",\"21312\"],\"28\":[\"[1,2,3].forEach{ function(numbers){\\n\\tcnumbers\\nend\",\"21617\"],\"29\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconumbers\\nend\",\"22009\"],\"30\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconnumbers\\nend\",\"22217\"],\"31\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsnumbers\\nend\",\"22545\"],\"32\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsonumbers\\nend\",\"22825\"],\"33\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsolnumbers\\nend\",\"23121\"],\"34\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsolenumbers\\nend\",\"23489\"],\"35\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsole.numbers\\nend\",\"24144\"],\"36\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsole.lnumbers\\nend\",\"24416\"],\"37\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsole.lonumbers\\nend\",\"24592\"],\"38\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsole.lognumbers\\nend\",\"24840\"],\"39\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsole.log(numbers\\nend\",\"25616\"],\"40\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsole.log(numbers)\\nend\",\"27441\"],\"41\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsole.log(numbers);\\nend\",\"28080\"],\"42\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsole.log(numbers);\\nen\",\"29113\"],\"43\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsole.log(numbers);\\ne\",\"29281\"],\"44\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsole.log(numbers);\\n\",\"29442\"],\"45\":[\"[1,2,3].forEach{ function(numbers){\\n\\tconsole.log(numbers);\\n}\",\"30504\"],\"46\":[\"[1,2,3].forEach function(numbers){\\n\\tconsole.log(numbers);\\n}\",\"37755\"],\"47\":[\"[1,2,3].forEach( function(numbers){\\n\\tconsole.log(numbers);\\n}\",\"38307\"],\"48\":[\"[1,2,3].forEach( function(numbers){\\n\\tconsole.log(numbers);\\n})\",\"39964\"],\"49\":[\"[1,2,3].forEach( function(numbers){\\n\\tconsole.log(numbers);\\n});\",\"40268\"]}"], ["question_id", 1], ["updated_at", "2014-05-30 22:16:31.678019"], ["user_id", 3]]
+  [1m[35m (2.2ms)[0m  COMMIT
+Completed 200 OK in 26ms (Views: 0.1ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = $1  [["question_id", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value > 0)[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value > 0)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value > 0)[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 7 AND (vote_value > 0)
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 7 AND (vote_value > 0)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 7 AND (vote_value < 0)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value > 0)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value < 0)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value > 0)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value < 0)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value > 0)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value < 0)[0m
+  Rendered shared/_answer.html.erb (16.2ms)
+  Rendered questions/show.html.erb within layouts/application (20.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+Completed 200 OK in 38ms (Views: 29.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/category.css?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/login_signup.css?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/language.css?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/questions_show.css?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/recorder.css?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/jquery.caret.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/utils.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/editor.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/player.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/recorder.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/recorder_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/layout/layout_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/questions/index_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/questions/show_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/languages/index_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/answers/new_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/answers/show_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/sessions/login_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/users/new_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/dark_geometric.png" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/squared_metal_red.png" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/hazy.png" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/squared_metal_blue_hover.png" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/assets/squared_metal_light_blue.png" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+
+
+Started GET "/get_answers/?question_id=1" for 127.0.0.1 at 2014-05-30 18:16:31 -0400
+Processing by QuestionsController#get_answers as */*
+  Parameters: {"question_id"=>"1"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = $1  [["question_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value > 0)[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value < 0)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value > 0)[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value < 0)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value > 0)[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value < 0)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 7 AND (vote_value > 0)[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 7 AND (vote_value < 0)
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/vote" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+Processing by VotesController#record as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xPErWE9xjV1rwFoOmN0W4stWYKZpDIAGZhpfifZeiN0=", "answer_id"=>"1", "user_id"=>"1", "question_id"=>"1", "vote_value"=>"1", "commit"=>" 0 Up"}
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  "answers".* FROM "answers"  WHERE "answers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mVote Load (7.9ms)[0m  SELECT  "votes".* FROM "votes"  WHERE "votes"."answer_id" = 1 AND "votes"."user_id" = 3  ORDER BY "votes"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (11.2ms)[0m  INSERT INTO "votes" ("answer_id", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"  [["answer_id", 1], ["created_at", "2014-05-30 22:16:35.747036"], ["updated_at", "2014-05-30 22:16:35.747036"], ["user_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "votes" SET "updated_at" = $1, "vote_value" = $2 WHERE "votes"."id" = 3[0m  [["updated_at", "2014-05-30 22:16:35.760087"], ["vote_value", 1]]
+  [1m[35m (5.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/questions/1
+Completed 302 Found in 37ms (ActiveRecord: 25.7ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = $1  [["question_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value > 0)[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value > 0)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value > 0)[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 7 AND (vote_value > 0)
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value > 0)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value < 0)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value > 0)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value < 0)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value > 0)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value < 0)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 7 AND (vote_value > 0)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 7 AND (vote_value < 0)[0m
+  Rendered shared/_answer.html.erb (11.7ms)
+  Rendered questions/show.html.erb within layouts/application (13.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+Completed 200 OK in 36ms (Views: 29.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/answer.css?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/category.css?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/language.css?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/recorder.css?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/login_signup.css?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/questions_show.css?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/jquery.caret.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/utils.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/editor.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/player.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/recorder.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/recorder_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/layout/layout_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/questions/index_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/questions/show_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/languages/index_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/answers/new_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/answers/show_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/sessions/login_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/users/new_view.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/dark_geometric.png" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/hazy.png" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/squared_metal_blue_hover.png" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/squared_metal_light_blue.png" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/assets/squared_metal_red.png" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+
+
+Started GET "/get_answers/?question_id=1" for 127.0.0.1 at 2014-05-30 18:16:35 -0400
+Processing by QuestionsController#get_answers as */*
+  Parameters: {"question_id"=>"1"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT  "questions".* FROM "questions"  WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT "answers".* FROM "answers"  WHERE "answers"."question_id" = $1  [["question_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value > 0)[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 1 AND (vote_value < 0)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value > 0)[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 5 AND (vote_value < 0)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value > 0)[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 6 AND (vote_value < 0)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 7 AND (vote_value > 0)[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes"  WHERE "votes"."answer_id" = 7 AND (vote_value < 0)
+Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/squared_metal_blue.png" for 127.0.0.1 at 2014-05-30 18:16:38 -0400
+
+
+Started GET "/assets/squared_metal_light_blue_hover.png" for 127.0.0.1 at 2014-05-30 18:16:43 -0400
